@@ -6,24 +6,24 @@
 
 - Use singular form for variables, functions, table, atau endpoints.
 
-/user, instead of /users
-db.user, instead of db.users
-user(), instead of users()
+    /user, instead of /users
+    db.user, instead of db.users
+    user(), instead of users()
 
 - Whenever possible, use a single word for variables, functions, table, atau endpoint.
 
-/user, instead of /userList
-db.user, instead of db.userList
-user(), instead of userList()
+    /user, instead of /userList
+    db.user, instead of db.userList
+    user(), instead of userList()
 
 - If more than one word is needed, then use the following pattern:
 
-[grouping] [parent] [child] [SIzeAgeShapeColorOriginMaterialPurpose]
+    [grouping] [parent] [child] [SIzeAgeShapeColorOriginMaterialPurpose]
 
-i.e.
-URL_API
-URL_BASE
-URL_HOST
+    i.e.
+    URL_API
+    URL_BASE
+    URL_HOST
 
 ### Order
 
@@ -49,7 +49,7 @@ URL_HOST
 
 - Use kebab-case for endpoints. 
 
-/user-friend
+    /user-friend
 
 - use the following pattern for endpoints:
     - GET     /[entity-name]
@@ -60,7 +60,7 @@ URL_HOST
     - DELETE  /[entity-name]/:id
 - Don't over complicate your endpoints.
 
-/[entity#1]/:param/[entity#2]/:param/[entity#3]/:param
+    /[entity#1]/:param/[entity#2]/:param/[entity#3]/:param
 
 - Don't add any prefix ('/api') to your api, to avoid redundancy.
 
@@ -68,8 +68,8 @@ URL_HOST
 
 - should not have an explicit version written in the function name.
 
-func GetUserV1() // wrong
-func GetUser() // right
+    func GetUserV1() // wrong
+    func GetUser() // right
 
 ### Separation
 
