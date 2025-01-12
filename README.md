@@ -85,3 +85,24 @@ core api (v2) - amir
 
 /v1/transaction -> udin /transaction
 /v2/transaction -> amir /transaction
+
+
+## Coding Style
+
+If certain language has a standard coding style, then do not reinvent the wheel ,just use it.
+However, for language that do not have a standard coding style, such as JavaScript (or TypeScript)
+-Nextjs, in our case- then you should follow the following:
+* eslint
+* [airbnb](https://github.com/airbnb/javascript)
+* overrides
+    * No semicolons
+    * Import order
+      * builtin
+      * external
+      * parent
+      * sibling
+      * index
+      * object
+    * no param reassign (exclusively use const, for immutability)
+    * no any
+* set the text editor to auto format on save (and or on paste)
